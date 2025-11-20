@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altrous TunerSpecs Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      :root {
+        --scrollbar-track: #e5e7eb; /* gray-200 */
+        --scrollbar-thumb: #60a5fa; /* blue-400 */
+        --scrollbar-thumb-border: #e5e7eb;
+      }
+      html.dark {
+        --scrollbar-track: #1e1e1e;
+        --scrollbar-thumb: #3498db;
+        --scrollbar-thumb-border: #1e1e1e;
+      }
+      .comparison-scrollbar::-webkit-scrollbar {
+        width: 8px;
+      }
+      .comparison-scrollbar::-webkit-scrollbar-track {
+        background: var(--scrollbar-track);
+      }
+      .comparison-scrollbar::-webkit-scrollbar-thumb {
+        background-color: var(--scrollbar-thumb);
+        border-radius: 10px;
+        border: 2px solid var(--scrollbar-thumb-border);
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://esm.sh/@google/genai"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-100 dark:bg-[#121212] transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
